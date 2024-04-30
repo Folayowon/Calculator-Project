@@ -1,64 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the body covers the entire viewport */
-    background-color: #ffffff;
-}
-
-.calculator-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Add space between calculator and link */
-}
-
-.calculator {
-    background-color: #626364;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(165, 176, 179, 0.1);
-}
-
-input[type="text"] {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #dcebf2;
-    border: 1px solid #4e8bc6; /* Blue border */
-    box-shadow: 0px 0px 10px rgba(78, 139, 198, 0.5); /* Shaded blue shadow */
-    text-align: right; /* Align text to the right */
-    color: #333; /* Text color */
-    font-size: 16px; /* Font size */
-}
-
-table {
-    width: 100%;
-}
-
-button {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    background-color: #ffffff;
-    box-shadow: 0px 0px 10px rgba(204, 198, 198, 0.1);   
-    color: #0d0505;
-    cursor: pointer;
-}
-
-button.calculate-button {
-    background-color: rgb(255, 136, 0);
-    color: black; /* Ensure the text is visible */
-}
-
-button:hover {
-    background-color: #d3d4d5;
-}
-
 /* Styling for footer */
 footer {
     margin-top: 20px; /* Add some space between calculator and footer */
@@ -78,4 +17,30 @@ footer a {
 
 footer a:hover {
     color: #777; /* Hover color */
+}
+
+/* Styles for repository link and button */
+.link-container {
+    margin-top: 20px; /* Add space between calculator and link container */
+}
+
+.repo-link {
+    color: #555; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Add bold font weight */
+    margin-right: 10px; /* Add space between link and button */
+}
+
+.repo-button {
+    padding: 8px 16px; /* Add padding */
+    font-size: 14px; /* Adjust font size */
+    border: none; /* Remove border */
+    background-color: #555; /* Button background color */
+    color: #fff; /* Button text color */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.repo-button:hover {
+    background-color: #777; /* Button hover background color */
 }
