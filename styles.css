@@ -5,8 +5,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Ensure the body covers the entire viewport */
     background-color: #ffffff;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Add space between calculator and link */
 }
 
 .calculator {
@@ -63,10 +70,12 @@ footer p {
 }
 
 footer a {
-    color: #333; /* Link color */
+    color: #555; /* Link color */
     text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Add bold font weight */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 footer a:hover {
-    color: #555; /* Hover color */
+    color: #777; /* Hover color */
 }

@@ -7,40 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="output" readonly>
-        <table>
-            <tr>
-                <td><button onclick="appendToOutput('7')">7</button></td>
-                <td><button onclick="appendToOutput('8')">8</button></td>
-                <td><button onclick="appendToOutput('9')">9</button></td>
-                <td><button onclick="appendToOutput('/')">÷</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendToOutput('4')">4</button></td>
-                <td><button onclick="appendToOutput('5')">5</button></td>
-                <td><button onclick="appendToOutput('6')">6</button></td>
-                <td><button onclick="appendToOutput('*')">×</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendToOutput('1')">1</button></td>
-                <td><button onclick="appendToOutput('2')">2</button></td>
-                <td><button onclick="appendToOutput('3')">3</button></td>
-                <td><button onclick="appendToOutput('-')">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="appendToOutput('0')">0</button></td>
-                <td><button onclick="appendToOutput('.')">.</button></td>
-                <td><button onclick="appendToOutput('+')">+</button></td>
-                <td><button class="calculate-button" onclick="calculate()">=</button></td>
-            </tr>
-        </table>
-    </div>
+    <div class="calculator-container">
+        <div class="calculator">
+            <input type="text" id="output" readonly>
+            <table>
+                <tr>
+                    <td><button onclick="appendToOutput('7')">7</button></td>
+                    <td><button onclick="appendToOutput('8')">8</button></td>
+                    <td><button onclick="appendToOutput('9')">9</button></td>
+                    <td><button onclick="appendToOutput('/')">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('4')">4</button></td>
+                    <td><button onclick="appendToOutput('5')">5</button></td>
+                    <td><button onclick="appendToOutput('6')">6</button></td>
+                    <td><button onclick="appendToOutput('*')">×</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('1')">1</button></td>
+                    <td><button onclick="appendToOutput('2')">2</button></td>
+                    <td><button onclick="appendToOutput('3')">3</button></td>
+                    <td><button onclick="appendToOutput('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToOutput('0')">0</button></td>
+                    <td><button onclick="appendToOutput('.')">.</button></td>
+                    <td><button onclick="appendToOutput('+')">+</button></td>
+                    <td><button class="calculate-button" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </div>
 
-    <!-- Footer with repository link -->
-    <footer>
-        <p>Code repository: <a href="https://github.com/Folayowon/Calculator-Project.git">GitHub</a></p>
-    </footer>
+        <!-- Footer with repository link -->
+        <footer>
+            <p>Code repository: <a href="https://github.com/Folayowon/Calculator-Project.git">GitHub</a></p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
