@@ -11,7 +11,6 @@
         <input type="text" id="output" readonly>
         <table>
             <tr>
-                <!--<td><button onclick="clearOutput()">C</button></td>-->
                 <td><button onclick="appendToOutput('7')">7</button></td>
                 <td><button onclick="appendToOutput('8')">8</button></td>
                 <td><button onclick="appendToOutput('9')">9</button></td>
@@ -34,10 +33,14 @@
                 <td><button onclick="appendToOutput('.')">.</button></td>
                 <td><button onclick="appendToOutput('+')">+</button></td>
                 <td><button class="calculate-button" onclick="calculate()">=</button></td>
-
             </tr>
         </table>
     </div>
+
+    <!-- Footer with repository link -->
+    <footer>
+        <p>Code repository: <a href="https://github.com/your-username/your-repository">GitHub</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
