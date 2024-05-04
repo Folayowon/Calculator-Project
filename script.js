@@ -1,17 +1,26 @@
-let output = document.getElementById("output");
+const display = document.getElementById("output");
+const buttons = Array.from(document.querySelectorAll("button"));
+const operators = ["+", "-", "*", "/"];
+let operand1 = "";
+let operand2 = "";
+let operator = "";
 
-function appendToOutput(value) {
-    output.value += value;
-}
+buttons.map((button) => {
+  button.addEventListener("click", (e) => {
+    const { value } = e.target;
 
-function clearOutput() {
-    output.value = "";
-}
-
-function calculate() {
-    try {
-        output.value = eval(output.value);
-    } catch (error) {
-        output.value = "Error";
+    if (operators.includes(value)) {
+      operator = value;
+      operand1 = display.value;
+      display.value = "";
+    } else if (value === "=") {
+      operand2 = display.value;
+      display.value = eval(`${operand1} ${operator} ${operand2}`);
+      operand1 = "";
+      operand2 = "";
+      operator = "";
+    } else {
+      display.value += value;
     }
-}
+  });
+});
